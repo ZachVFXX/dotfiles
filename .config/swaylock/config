@@ -1,0 +1,50 @@
+image=~/wallpapers/blackhole.png
+
+# Layout
+font=Iosevka
+font-size=24
+indicator-radius=60
+indicator-thickness=4
+
+ignore-empty-password
+show-failed-attempts
+
+# Position
+indicator-x=960
+indicator-y=800
+
+# Global separator hiding
+separator-color=00000000
+
+# Hide ALL text
+text-color=00000000
+text-ver-color=00000000
+text-clear-color=00000000
+text-caps-lock-color=00000000
+text-wrong-color=00000000
+
+# 1. Idle / Base Typing (Smooth Grayish)
+inside-color=00000000
+ring-color=888888
+key-hl-color=cccccc
+line-color=00000000
+
+# 2. Verifying (Pure White ring)
+inside-ver-color=00000000
+ring-ver-color=ffffff    
+line-ver-color=00000000
+
+# 3. Wrong / Error (Pure Red ring)
+inside-wrong-color=00000000
+ring-wrong-color=ff5555  
+line-wrong-color=00000000
+
+# 4. Caps Lock (Orange ring)
+inside-caps-lock-color=00000000
+ring-caps-lock-color=ff9900
+line-caps-lock-color=00000000
+
+# 5. Cleared (Blue ring)
+inside-clear-color=00000000
+ring-clear-color=33aaff  
+line-clear-color=00000000
