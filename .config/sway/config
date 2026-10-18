@@ -169,7 +169,7 @@ bar {
     }
 }
 
-for_window [app_id="app.zen_browser.zen" title="Picture-in-Picture"] floating enable, sticky enable, resize set width 600 px height 400 px, move position 40 px 40 px
+for_window [app_id="app.zen_browser.zen" title="Picture-in-Picture"] floating enable, sticky enable, resize set width 600 px height 400 px, move position 1300 px 20 px
 for_window [class=".*"] inhibit_idle fullscreen
 for_window [app_id=".*"] inhibit_idle fullscreen
 
