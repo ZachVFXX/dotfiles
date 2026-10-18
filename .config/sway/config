@@ -12,9 +12,7 @@ set $file nautilus
 exec dbus-update-activation-environment --all
 exec gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 
-exec wireplumber
-exec pipewire
-exec pipewire-pulse
+exec pipewire & sleep 1 && wireplumber & pipewire-pulse
 
 # Set wallpaper
 output * bg ~/wallpapers/blackhole.png fill
