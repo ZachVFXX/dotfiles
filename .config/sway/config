@@ -12,7 +12,7 @@ set $file nautilus
 exec dbus-update-activation-environment --all
 exec gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 
-exec pipewire & sleep 1 && wireplumber & pipewire-pulse
+exec pipewire
 
 # Set wallpaper
 output * bg ~/wallpapers/blackhole.png fill
@@ -30,7 +30,7 @@ exec swayidle -w \
     timeout 300 'swaylock -f' \
     timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
     before-sleep 'swaylock -f'
-    
+
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sl
@@ -156,14 +156,16 @@ bar {
 
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
-    status_command ~/.config/sway/status.sh
+    status_command ~/.config/sway/bin/barz
+
+	font pango:Iosevka Nerd Font, NerdFont 12
 
     colors {
         statusline #ffffff
         background #323232
 		focused_workspace  #81a1c1 #434c5e #eceff4
         active_workspace   #3b4252 #2e3440 #d8dee9
-        inactive_workspace #2e3440 #2e3440 #4c566a   
+        inactive_workspace #2e3440 #2e3440 #4c566a
     }
 }
 
