@@ -1,8 +1,9 @@
-# If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
+alias ls='ls -o -A -g -h --color=auto -p -q'
 PS1='[\u@\h \W]\$ '
+
 export PATH="$HOME/.local/bin:$PATH"
 . "$HOME/.cargo/env"
 export ZVM_INSTALL="$HOME/.zvm/self"
