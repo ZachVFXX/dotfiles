@@ -107,6 +107,10 @@ bindsym $mod+g layout stacking
 bindsym $mod+t layout tabbed
 bindsym $mod+s layout toggle split
 
+# bind swipe to switch workspace
+bindgesture swipe:3:right workspace prev
+bindgesture swipe:3:left workspace next
+
 # Make the current focus fullscreen
 bindsym $mod+f fullscreen
 
